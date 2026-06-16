@@ -2,8 +2,8 @@ import os, sys, subprocess, time, re, json, urllib.request, urllib.error, shutil
 
 STARTER_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tools', 'starter.py')
 
-GITHUB_REPO  = 'Wumpusuhq/Wumpus-multitool'
-BRANDING_URL = 'https://github.com/Wumpusuhq/Wumpus-multitool'
+GITHUB_REPO  = 'hataybdx-wq/WumpusMultitool'
+BRANDING_URL = 'https://github.com/hataybdx-wq/WumpusMultitool'
 
 TOOLS_DIR  = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tools')
 STAR_DIR   = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'star')
