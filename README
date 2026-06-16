@@ -1,0 +1,103 @@
+# Wumpus Multitool
+
+**Outil tout-en-un pour Discord** — Self-bot & Token Tools
+
+---
+
+## 🚀 Installation
+
+1. Décompresse le fichier `clean2.zip`
+2. Ouvre un terminal dans le dossier `clean2`
+3. Installe les dépendances :
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Lance le launcher :
+
+```bash
+python launch.py
+```
+
+---
+
+## 📋 Liste Complète des Outils
+
+### ⭐ Star Tools (Outils Premium)
+
+- **AzarNuker** — IP Logger + Overlay sur AzarLive
+- **DDoS Layer7** — Attaques DDoS multi-protocoles (TCP, UDP, HTTP, HTTPS, ICMP)
+- **DDoS ProxySock** — Flood avec proxies
+- **Token Nuker** — Changeur de statut + thème + langue en boucle
+- **Token Raider** — Spammeur multi-token
+- **Nuke Bot** — Bot de destruction complète de serveur
+
+### 🛠️ Outils Gratuits
+
+- **Friends Deleter** — Supprime tous tes amis
+- **Grab Deleter** — Détruit un webhook (spam + suppression)
+- **Groupe Spam** — Crée des groupchats en masse
+- **HS Changer** — Change ton Hypesquad
+- **ID to Bot** — Génère un lien d’invitation bot
+- **ID to Token** — Bruteforce partiel d’un token via ID
+- **Image Metadata** — Extrait les métadonnées d’une image
+- **Langue Changer** — Change la langue du compte en boucle
+- **Mass DM** — Envoie des MP en masse
+- **Mass Report** — Report en masse
+- **Mass Post** — Crée des posts en masse dans un forum
+- **Nitro Gen** — Générateur + Checker de Nitro
+- **Server Cloner** — Clone entièrement un serveur
+- **Statut Changer** — Change ton statut en boucle
+- **Token Block** — Bloque tous tes amis
+- **Token Gen** — Générateur de tokens
+- **Token Info** — Affiche les informations d’un token
+- **Token Joiner** — Rejoint un serveur avec Selenium
+- **Token Leaver** — Quitte tous les serveurs
+- **Token Login** — Connexion via navigateur avec token
+- **Token Spammer** — Spamme un salon
+
+---
+
+## ⭐ Débloquer les Star Tools
+
+1. Mets une **étoile** sur ce repository
+2. Dans le launcher, appuie sur **`G`**
+3. Crée un **GitHub Token** avec le scope `read:user`
+4. Colle le token dans le launcher
+
+---
+
+## ⚙️ Utilisation du Launcher
+
+- Choisis un outil avec son **numéro**
+- Appuie sur **`G`** pour configurer ton token GitHub
+- **`N`** → Page suivante
+- **`P`** → Page précédente
+- **`0`** → Quitter
+
+---
+
+## 📌 Conseils
+
+- Utilise **Firefox** pour Token Joiner et Token Login (plus stable)
+- Lance les outils DDoS et Nuker en **administrateur**
+- Assure-toi d’avoir Chrome, Edge ou Firefox installé
+
+---
+
+## ⚠️ Avertissement
+
+**Ce tool va à l’encontre des Conditions d’Utilisation de Discord.**  
+L’utilisation de self-bots peut entraîner un **ban permanent** de ton compte.
+
+Utilise cet outil **à tes risques et périls**. Nous ne sommes pas responsables des conséquences.
+
+---
+
+**Made by Wumpus**  
+Discord : `discord.gg/datas`
+
+⭐ Si le tool te plaît, n’oublie pas de mettre une étoile !
+
+How to star : https://github.com/user-attachments/assets/4bf6f900-249f-4a4d-a535-ed8d257fe466
