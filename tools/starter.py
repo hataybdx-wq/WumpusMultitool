@@ -10,13 +10,13 @@ def main():
 
     print()
     print("╔════════════════════════════╗")
-    print("║      TELEGRAM OPENER       ║")
+    print("║      Discord  OPENER       ║")
     print("╚════════════════════════════╝")
     print()
 
     print("[~] Ouverture de Telegram...")
-    webbrowser.open("https://t.me/wumpusmultitool")
-    print("[✓] Telegram ouvert")
+    webbrowser.open("https://discord.gg/xvQXbG5VtN")
+    print("[✓] Discord ouvert")
 
     time.sleep(2)
 
