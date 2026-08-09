@@ -15,7 +15,7 @@ def main():
     print()
 
     print("[~] Ouverture de Telegram...")
-    webbrowser.open("https://discord.gg/xvQXbG5VtN")
+    webbrowser.open("https://discord.gg/leakdb")
     print("[✓] Discord ouvert")
 
     time.sleep(2)
