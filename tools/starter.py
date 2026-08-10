@@ -1,4 +1,4 @@
- import webbrowser
+import webbrowser
 
 import time
 
